@@ -19,6 +19,9 @@ It offers a familiar API for parallel/distributed computing.
 - scale out our code from single machine to large clusters
 - support for task scheduling for complex applications
 
+Notes: If your dataframe fits into memory very easily, then Pandas should be preferred over Dask
+
+
 ##### Features of DASK:
 - allows parallelizing existing Python code w/o doing many changes
 - has specialized data structures which allows users to load data larger than the size of memory (RAM) like:
@@ -47,11 +50,36 @@ To install locally using pip/conda:
 `pip install dask`
 
 To install all components of dask (like dask arrays), run:
-``pip install dask[complete]`
+`pip install dask[complete]`
 
 You can then check running:
-```
-python
->>> import dask
->>>
-```
+`python`
+`import dask`
+
+For Mac users, make sure to also install if not done already XCode Command Line (required for the complete install of Dask)
+`xcode-select --install`
+
+### 2. Understanding Dask arrays
+
+**Dask arrays** are specialized data structures that can store chunks, or Numpy arrays
+- interface is similar to NumPy API
+- Blocked algorithms work on Dask arrays
+- Dasks makes use of multiple cores to speedup computation on these arrays
+- Allows out-of-memory computation (we can load arrays larger than our RAM, by breaking the data in small/manageable chunks)  
+![dask array](images/dask-array.png)
+
+**Blocked Algorithms** are algorithms that work on chunks or blocks of data
+- They break the computation into smaller manageable chunks, then move on to aggregating the results between these chunks
+- Dask has specialized blocked algorithms to work with Dask Array, Dask Dataframes and so on
+
+***Example***  
+Assume we have an array and we want to sum that array.
+We can break that array into chunks, sum each of them, then sum the sums.
+![array](images/sum_array.png)
+
+
+##### Hands on with Dask arrays
+=> Check the following notebook: [dask array intro](notebooks/2-dask-arrays/intro-dask-arrays.ipynb)
+Notebook intro
+
+And to visualize graphs, please refer to [graphviz](https://docs.dask.org/en/latest/graphviz.html)
