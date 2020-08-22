@@ -82,5 +82,7 @@ We can break that array into chunks, sum each of them, then sum the sums.
 => Check the following notebooks:
  - [dask array intro](notebooks/2-dask-arrays/intro-dask-arrays.ipynb)
  - [dask array deeper dive](notebooks/2-dask-arrays/digging-deeper-into-dask-arrays.ipynb)
+ - [creating universal numpy functions with dask](notebooks/2-dask-arrays/universal-nympy-functions-with-dask.ipynb)
+ 
 
 And to visualize graphs, please refer to [graphviz](https://docs.dask.org/en/latest/graphviz.html)
