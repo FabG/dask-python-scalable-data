@@ -88,5 +88,5 @@ We can break that array into chunks, sum each of them, then sum the sums.
 And to visualize graphs, please refer to [graphviz](https://docs.dask.org/en/latest/graphviz.html)
 
 ##### Parallelizing Python Code with Dask
- - [dask-delayed](notebooks/3-code-parallelism/dask-delayed.ipynb)
- 
+- [dask-delayed](notebooks/3-code-parallelism/dask-delayed.ipynb)
+- [task-graphs](notebooks/3-code-parallelism/task-graphs.ipynb)
