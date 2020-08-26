@@ -90,3 +90,7 @@ And to visualize graphs, please refer to [graphviz](https://docs.dask.org/en/lat
 ##### Parallelizing Python Code with Dask
 - [dask-delayed](notebooks/3-code-parallelism/dask-delayed.ipynb)
 - [task-graphs](notebooks/3-code-parallelism/task-graphs.ipynb)
+- [performance-analysis](notebooks/3-code-parallelism/performance-analysis.ipynb)
+
+##### Dask Data Dataframes
+- [exploring-dask-dataframe](notebooks/4-dask-dataframe/exploring-dask-dataframe.ipynb)
