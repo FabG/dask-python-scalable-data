@@ -94,3 +94,5 @@ And to visualize graphs, please refer to [graphviz](https://docs.dask.org/en/lat
 
 ##### Dask Data Dataframes
 - [exploring-dask-dataframe](notebooks/4-dask-dataframe/exploring-dask-dataframe.ipynb)
+- [group-by](notebooks/4-dask-dataframe/dask-groupby.ipynb)
+- [loading-large-datasets](notebooks/4-dask-dataframe/dask-loading-large-data.ipynb)
