@@ -59,7 +59,7 @@ You can then check running:
 For Mac users, make sure to also install if not done already XCode Command Line (required for the complete install of Dask)
 `xcode-select --install`
 
-### 2. Understanding Dask arrays
+### 2. Understanding Dask arrays, code parallelism and Dask bags
 
 **Dask arrays** are specialized data structures that can store chunks, or Numpy arrays
 - interface is similar to NumPy API
@@ -96,3 +96,27 @@ And to visualize graphs, please refer to [graphviz](https://docs.dask.org/en/lat
 - [exploring-dask-dataframe](notebooks/4-dask-dataframe/exploring-dask-dataframe.ipynb)
 - [group-by](notebooks/4-dask-dataframe/dask-groupby.ipynb)
 - [loading-large-datasets](notebooks/4-dask-dataframe/dask-loading-large-data.ipynb)
+
+##### Dask Bags
+ - [creating-storing-dask-bags](notebooks/5-dask-bags/creating-storing-dask-bags.ipynb)
+ - [manipulating-dask-bags](notebooks/5-dask-bags/manipulating-dask-bags.ipynb)
+ - [wordcount](notebooks/5-dask-bags/wordcount.ipynb)
+
+
+### 3. Distributing Computing with DASK
+ - Dask has the ability to scale over a cluster of nodes
+ - Dask code running on a single machine, can automatically be scaled over a distributed cluster
+ - Features include data sharing between workers, low latency, support for complex scheduling, and is easy to set up
+ - `Dask.distributed` is a lightweight library, that extends Dask APIs for distributed computing over a cluster of nodes
+
+##### Dask vs Apache Spark
+ - Spark is more of an "all-in-one" solution for Big dat processing, whereas Dask is a lightweight library
+ - If your use case is complex, for which Spark does not provide a solution out of the box, then Dask can help in that situation
+ - Languages:
+  - Spark: scala, Java, python
+  - Dask: pure python
+ - Dask can easily interoperate with other Python libraries like scikit-learn, NumPy, Pandas and so on
+
+
+###### notebooks
+ - [setting-dask-cluster](notebooks/6-distribute-computing/setting-dask-cluster.ipynb)
