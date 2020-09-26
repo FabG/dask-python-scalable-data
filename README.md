@@ -117,6 +117,17 @@ And to visualize graphs, please refer to [graphviz](https://docs.dask.org/en/lat
   - Dask: pure python
  - Dask can easily interoperate with other Python libraries like scikit-learn, NumPy, Pandas and so on
 
+##### Dask Scheduler
+Schedulers available in dask:
+ - Processes scheduler: keyword `processes` - makes use of a processes pool
+ - Threaded scheduler: keyword `threads` - makes use of threads to do parallel computations
+ - Single threaded scheduler: keyword `sync` - used more for debugging
+ - Distributed scheduler:
+  - Intelligently computes tasks and graphs, across multiple workers
+  - Is available with a dashboard UI, when we start the Dask cluster
+
 
 ###### notebooks
  - [setting-dask-cluster](notebooks/6-distribute-computing/setting-dask-cluster.ipynb)
+ - [dask-schedulers](notebooks/6-distribute-computing/dask-schedulers.ipynb)
+ 
