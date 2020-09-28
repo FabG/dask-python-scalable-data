@@ -1,9 +1,12 @@
 # Scalable Data Analysis in Python with DASK
 
 This repo includes course and labs work related to [Dask](https://dask.org/)
-The course is: [scalable-data-analysis-in-python-with-dask/](https://www.udemy.com/course/scalable-data-analysis-in-python-with-dask/)
+ The course is: [scalable-data-analysis-in-python-with-dask/](https://www.udemy.com/course/scalable-data-analysis-in-python-with-dask/).
 
-The code will be in python 3.X
+
+Certificate of completion is available [here](certificate/Dask-Udemy_Certificate-20200928.jpg)
+
+
 
 #### What is DASK
 [Dask](https://dask.org/) is a library in Python, that allows users to:
@@ -78,7 +81,7 @@ We can break that array into chunks, sum each of them, then sum the sums.
 ![array](images/sum_array.png)
 
 
-##### Dask arrays
+###### Dask arrays notebooks
 => Check the following notebooks:
  - [dask array intro](notebooks/2-dask-arrays/intro-dask-arrays.ipynb)
  - [dask array deeper dive](notebooks/2-dask-arrays/digging-deeper-into-dask-arrays.ipynb)
@@ -87,17 +90,17 @@ We can break that array into chunks, sum each of them, then sum the sums.
 
 And to visualize graphs, please refer to [graphviz](https://docs.dask.org/en/latest/graphviz.html)
 
-##### Parallelizing Python Code with Dask
+###### Parallelizing Python Code with Dask notebooks
 - [dask-delayed](notebooks/3-code-parallelism/dask-delayed.ipynb)
 - [task-graphs](notebooks/3-code-parallelism/task-graphs.ipynb)
 - [performance-analysis](notebooks/3-code-parallelism/performance-analysis.ipynb)
 
-##### Dask Data Dataframes
+###### Dask Data Dataframes notebooks
 - [exploring-dask-dataframe](notebooks/4-dask-dataframe/exploring-dask-dataframe.ipynb)
 - [group-by](notebooks/4-dask-dataframe/dask-groupby.ipynb)
 - [loading-large-datasets](notebooks/4-dask-dataframe/dask-loading-large-data.ipynb)
 
-##### Dask Bags
+###### Dask Bags notebooks
  - [creating-storing-dask-bags](notebooks/5-dask-bags/creating-storing-dask-bags.ipynb)
  - [manipulating-dask-bags](notebooks/5-dask-bags/manipulating-dask-bags.ipynb)
  - [wordcount](notebooks/5-dask-bags/wordcount.ipynb)
@@ -126,6 +129,11 @@ Schedulers available in dask:
   - Intelligently computes tasks and graphs, across multiple workers
   - Is available with a dashboard UI, when we start the Dask cluster
 
+##### Dask Scheduler notebooks
+   - [setting-dask-cluster](notebooks/6-distribute-computing/setting-dask-cluster.ipynb)
+   - [dask-schedulers](notebooks/6-distribute-computing/dask-schedulers.ipynb)
+   - [dask-dashboard-ui](notebooks/6-distribute-computing/dask-dashboard-ui.ipynb)
+
 
 ### 4. Machine Learning with DASK
 - Dask-ML provides APIs, similar to scikit-learn
@@ -134,6 +142,7 @@ Schedulers available in dask:
 - We can also combine other external libraries like XGBoost and TensorFlow
 
 
-###### notebooks
- - [setting-dask-cluster](notebooks/6-distribute-computing/setting-dask-cluster.ipynb)
- - [dask-schedulers](notebooks/6-distribute-computing/dask-schedulers.ipynb)
+##### Dask-ML notebooks
+   - [dask-ml-regression](7-dask-machine-learning/dask-ml-regression.ipynb)
+   - [dask-ml-classification](7-dask-machine-learning/dask-ml-classification.ipynb)
+   - [dask-hyperparameters](7-dask-machine-learning/dask-hyperparameters.ipynb)
