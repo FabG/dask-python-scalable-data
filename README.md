@@ -127,7 +127,13 @@ Schedulers available in dask:
   - Is available with a dashboard UI, when we start the Dask cluster
 
 
+### 4. Machine Learning with DASK
+- Dask-ML provides APIs, similar to scikit-learn
+- We can use it for large datasets that would not fit in memory
+- We can implement our own parallel versions of scikit-learn algorithms by implementing them using Dask collection
+- We can also combine other external libraries like XGBoost and TensorFlow
+
+
 ###### notebooks
  - [setting-dask-cluster](notebooks/6-distribute-computing/setting-dask-cluster.ipynb)
  - [dask-schedulers](notebooks/6-distribute-computing/dask-schedulers.ipynb)
- 
